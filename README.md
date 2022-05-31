@@ -11,3 +11,9 @@
 - How does it work?
   - https://github.com/brython-dev/brython/wiki/How%20Brython%20works (linked from [Brython's readme](https://brython.info/))
   - tldr: On load, `brython()` (part of `brython.js`) looks for all script tags with `text/python` and compiles Python to JS.
+
+
+# View examples in browser
+- https://prendradjaja.github.io/brython-lnl/example.html
+- https://prendradjaja.github.io/brython-lnl/more-examples/with-external-script-file.html
+- https://prendradjaja.github.io/brython-lnl/more-examples/with-javascript.html
