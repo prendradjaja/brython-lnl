@@ -1,0 +1,30 @@
+<style>
+  .board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+  }
+  .cell {
+    height: 100px;
+    border: 1px solid black;
+  }
+  .cell.on {
+    background: skyblue;
+  }
+</style>
+<body>
+  <script>
+    const board = document.createElement('div');
+    document.body.appendChild(board);
+    board.classList.add('board');
+
+    for (let i = 0; i < 9; i++) {
+      const cell = document.createElement('div');
+      board.appendChild(cell);
+      cell.classList.add('cell');
+      cell.addEventListener(
+        'click',
+        () => cell.classList.toggle('on')
+      );
+    }
+  </script>
+</body>
